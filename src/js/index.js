@@ -29,7 +29,6 @@ function setupEventListeners() {
     // Search button listener
     searchButton.addEventListener('click', handleSearch);
 
-    // ...código removido do microfone...
 }
 
 // Update search button state
@@ -42,14 +41,9 @@ function updateSearchButton() {
 async function handleSearch() {
     const mood = moodInput.value.trim();
 
-    if (!mood) {
-        alert('Por favor, descreva o que você quer assistir!');
-        return;
-    }
-
     // Show loading state
     const originalText = searchButton.innerHTML;
-    searchButton.innerHTML = '<span style="animation: pulse 1s infinite;">🔍 Buscando...</span>';
+    searchButton.innerHTML = '<span style="animation: pulse 1s infinite;">🔍 Buscando...</span>'; 
     searchButton.disabled = true;
 
     const prompt = JSON.stringify({ userPrompt: mood });
