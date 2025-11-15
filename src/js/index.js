@@ -50,7 +50,7 @@ async function handleSearch() {
 
     try {
         // Fazer POST para o webhook do N8N
-        const response = await fetch('https://botflix3.app.n8n.cloud/webhook/f6e7d294-5206-450e-beae-8eedb34498f9', {
+        const response = await fetch('https://binhotti.app.n8n.cloud/webhook-test/botflix', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
