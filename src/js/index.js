@@ -50,7 +50,7 @@ async function handleSearch() {
 
     try {
         // Fazer POST para o webhook do N8N
-        const response = await fetch('https://binhotti.app.n8n.cloud/webhook-test/botflix', {
+        const response = await fetch('https://binhotti.app.n8n.cloud/webhook/botflix', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -91,8 +91,6 @@ async function handleSearch() {
             } else {
                 alert('Não foi possível exibir o resultado. Elementos não encontrados.');
             }
-        } else {
-            alert('Nenhum filme encontrado para sua busca.');
         }
     } catch (error) {
         console.error('Erro ao fazer a requisição:', error);
