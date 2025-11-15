@@ -97,30 +97,27 @@ async function handleSearch() {
         console.error('Erro ao fazer a requisição:', error);
         alert('Erro ao buscar filmes. Tente novamente.');
     } finally {
-        // Reset button
         searchButton.innerHTML = originalText;
         updateSearchButton();
     }
 }
 
-// Add typing effect to placeholder (optional enhancement)
-// function addTypingEffect() {
-//     const placeholders = [
-//         "Digite como você está se sentindo...",
-//         "Que tipo de filme você quer assistir?",
-//         "Descreva seu humor atual...",
-//         "O que combina com seu dia hoje?"
-//     ];
+function addTypingEffect() {
+    const placeholders = [
+        "Digite como você está se sentindo...",
+        "Que tipo de filme você quer assistir?",
+        "Descreva seu humor atual...",
+        "O que combina com seu dia hoje?"
+    ];
 
-//     let currentIndex = 0;
+    let currentIndex = 0;
 
-//     setInterval(() => {
-//         if (!moodInput.value) {
-//             moodInput.placeholder = placeholders[currentIndex];
-//             currentIndex = (currentIndex + 1) % placeholders.length;
-//         }
-//     }, 3000);
-// }
+    setInterval(() => {
+        if (!moodInput.value) {
+            moodInput.placeholder = placeholders[currentIndex];
+            currentIndex = (currentIndex + 1) % placeholders.length;
+        }
+    }, 3000);
+}
 
-// Initialize typing effect
-//addTypingEffect();
+addTypingEffect();
