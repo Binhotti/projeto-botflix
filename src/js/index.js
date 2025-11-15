@@ -86,6 +86,7 @@ async function handleSearch() {
                             <p class="movie-rating">⭐ ${typeof movie.vote_average === 'number' ? movie.vote_average.toFixed(1) : 'N/A'} / 10</p>
                         </div>
                     </div>
+                    
                 `;
             } else {
                 alert('Não foi possível exibir o resultado. Elementos não encontrados.');
