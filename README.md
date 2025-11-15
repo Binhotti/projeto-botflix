@@ -2,9 +2,13 @@
 
 Bem-vindo ao BotFlix! Um simples recomendador de filmes baseado no seu humor.
 
-## 🎬 Sobre o Projeto
+## ❓ Sobre o Projeto
 
 O BotFlix é uma aplicação web frontend que permite aos usuários obterem uma sugestão de filme com base no sentimento ou humor que eles descrevem em um campo de texto.
+
+## 📷 Preview da Aplicação
+
+![BotFlix](./src/images/botflix.gif)
 
 ## ✨ Funcionalidades
 
